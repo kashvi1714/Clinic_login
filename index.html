@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav">
+                <img src="images/logo.jpg" alt="logo not found">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main section -->
+    <section class="main">
+        <div class="container">
+            <div class="login">
+                <!-- Admin Login -->
+                <form action="" class="admin-login">
+                    <h2 class="title">Admin Login</h2>
+                    <div class="input-field">
+                        <i class="bx bx-user"> </i>
+                        <input type="text" placeholder="Admin ID">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="bx bx-lock-alt"> </i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                </form>
+
+
+                <!-- Patient login -->
+                <form action="" class="patient-login">
+                    <h2 class="title">Patient Login</h2>
+                    <div class="input-field">
+                        <i class="bx bx-user"> </i>
+                        <input type="text" placeholder="Patient ID">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="bx bx-lock-alt"> </i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                </form>
+            </div>
+
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Member of Hospital?</h3>
+                        <button class="btn" id="patient-btn">Admin Login</button>
+                    </div>
+                    <img src="images/admin.png" alt="" class="image">
+                </div>
+
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>Patient at Hospital?</h3>
+                        <button class="btn" id="admin-btn">Patient Login</button>
+                    </div>
+                    <img src="images/patient.png" alt="" class="image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
